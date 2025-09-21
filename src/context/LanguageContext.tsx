@@ -755,6 +755,7 @@ const translations = {
     'nav.analytics': 'വിശകലനം',
     'nav.settings': 'ക്രമീകരണങ്ങൾ',
     'nav.logout': 'സൈൻ ഔട്ട്',
+    'nav.features': 'സവിശേഷതകൾ',
     
     // Dashboard
     'dashboard.welcome': 'തിരിച്ചുവരവിൽ സ്വാഗതം',
