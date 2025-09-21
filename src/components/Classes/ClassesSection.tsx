@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useAuth } from '../../context/AuthContext';
 import { useApp } from '../../context/AppContext';
+import { useLanguage } from '../../context/LanguageContext';
 import { Plus, Edit, Trash2, Users, Calendar, MapPin, Clock, Upload } from 'lucide-react';
 import * as XLSX from 'xlsx';
 import Papa from 'papaparse';
@@ -8,6 +9,7 @@ import Papa from 'papaparse';
 const ClassesSection: React.FC = () => {
   const { user } = useAuth();
   const { classes, setClasses, students, faculty } = useApp();
+  const { t } = useLanguage();
   const [showAddModal, setShowAddModal] = useState(false);
   const [showEditModal, setShowEditModal] = useState(false);
   const [showImportModal, setShowImportModal] = useState(false);
