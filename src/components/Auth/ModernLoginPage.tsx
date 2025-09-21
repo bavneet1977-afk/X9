@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../../context/AuthContext';
 import { useApp } from '../../context/AppContext';
+import { useLanguage } from '../../context/LanguageContext';
 import { 
   EnvelopeIcon, 
   LockClosedIcon, 
@@ -42,6 +43,7 @@ const ModernLoginPage: React.FC<ModernLoginPageProps> = ({
   const [showSavedCredentials, setShowSavedCredentials] = useState(false);
   const { login, isLoading } = useAuth();
   const { darkMode } = useApp();
+  const { t } = useLanguage();
 
   // Role options with better icons and descriptions
   const roleOptions = [
